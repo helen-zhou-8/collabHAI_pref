@@ -7,11 +7,11 @@ After a game is completed, the JS client sends data to the Python server (via a 
 
 The game_logs.db consists of 6 tables:
 1. [Games](###games)
-2. [Frames](#frames)
-3. [Actions](#actions)
-4. [Bullets](#bullets)
-5. [Enemies](#enemies)
-6. [Events](#events)
+2. [Frames](###frames)
+3. [Actions](###actions)
+4. [Bullets](###bullets)
+5. [Enemies](###enemies)
+6. [Events](###events)
 
 
 ### 1. Games
