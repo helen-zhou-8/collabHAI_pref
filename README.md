@@ -18,7 +18,7 @@ The game_logs.db consists of 6 tables:
 Each row in the Games table represents one completed round of the game. 
 
 The Games table has 4 columns:
-- **id**: the row number; **game_id** for game used to identify the game in [Frames](#frames) table (integer type)
+- **id**: the row number; **game_id** for game used to identify the game in [Frames](#2-frames) table (integer type)
 - **player_id**: the ID passed in via the `id=` URL parameter (default is `UNDEFINED`, text type)
 - **date**: timestamp of when game was created (text type)
 - **mode**: the mode of the game passed in via the `mode=` URL parameter (default is 1, integer type)
@@ -32,7 +32,7 @@ Each row of the Frames table represents one frame of a game. A frame is one pass
 
 The Frames tables has 11 columns:
 - **id**: the row number; **frame_id** used in other tables to identigy the corresponding frame (don't use true **frame_number** in other tables because you would need a double lookup with **game_id**, integer type)
-- **game_id**: matches **id** from [Games](#games) table (integer type)
+- **game_id**: matches **id** from [Games](#1-games) table (integer type)
 - **timestamp**: timestamp for each frame (text type)
 - **frame_number**: frame_number from game loop (integer type)
 - **player_position**: x-coordinate for player ship (integer type)
@@ -50,8 +50,8 @@ The Frames tables has 11 columns:
 Each row of the Actions table represents the player and AI actions from one frame of a game. A frame is one pass through the `update()` function for the game.
 
 The Actions tables has 17 columns:
-- **game_id**: matches **id** from [Games](#games) table (integer type)
-- **frame_id**: matches **id** from [Frames](#frames) table (integer type)
+- **game_id**: matches **id** from [Games](#1-games) table (integer type)
+- **frame_id**: matches **id** from [Frames](#2-frames) table (integer type)
 - **frame_sent**: indicator variable if frame was sent via control socket (integer type)
     - O: not sent
     - 1: sent
@@ -92,7 +92,7 @@ Each row in the Bullets table represents the positioning and of a bullet at a sp
 
 The Bullets table has 5 columns:
 - **id**: the row number, used to identify the specific bullet (integer type)
-- **frame_id**: matches **id** from [Frames](#frames) table (integer type)
+- **frame_id**: matches **id** from [Frames](#2-frames) table (integer type)
 - **type**:  (integer type)
 - **x**: x position of the bullet at the current frame (integer type)
 - **y**: y position of the bullet at the current frame (integer type)
@@ -103,7 +103,7 @@ Each row in the Enemies table represents the positioning and of an enemy at a sp
 
 The Enemies table has 5 columns:
 - **id**: the row number, used to identify the specific enemy (integer type)
-- **frame_id**: matches **id** from [Frames](#frames) table (integer type)
+- **frame_id**: matches **id** from [Frames](#2-frames) table (integer type)
 - **side**: specifices the side of the screen (player or AI) the enemy is in at the current frame (text type)
 - **x**: x position of the enemy at the current frame (integer type)
 - **y**: y position of the enemy at the current frame (integer type)
@@ -114,7 +114,7 @@ Each row in the Events table represents a frame where the player or the AI kills
 
 The Events table has 4 columns:
 - **id**: the row number, used to identify the specific event incident (integer type)
-- **frame_id**: matches **id** from [Frames](#frames) table, the specific frame at which the killing occurred (integer type)
+- **frame_id**: matches **id** from [Frames](#2-frames) table, the specific frame at which the killing occurred (integer type)
 - **killer**: represents who killed the enemy (text type)
     - PLAYER: the player killed the enemy at the specific frame
     - AI: the AI agent killed the enemy at the specific frame
