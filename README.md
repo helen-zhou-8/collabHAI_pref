@@ -1,6 +1,6 @@
 # collabHAI_pref Documentation
 
-## Information about game_logs.db
+## Information About game_logs.db (Game Logs)
 *Last updated: 5/22/2023
 
 After a game is completed, the JS client sends data to the Python server (via a Websocket) to log game informaiton in an [SQLite](https://www.sqlite.org/index.html) database. Once the green text at the botom of the "game ended" screen changes from "Loading..." to a valid completion code, the data has been successfully saved to the database.
@@ -121,3 +121,24 @@ The Events table has 4 columns:
 - **killed**: represents which side the enemy was killed in (text type)
     - LEFT: the enemy was killed on the left side of the screen at the specific frame
     - RIGHT: the enemy was killed on the right side of the screen at the specific frame
+
+
+## Information About HRI2023Analysis.ipynb (Analysis Dataframes)
+*Last updated: 5/22/2023
+
+Based on the Qualtrics survey and some of the game and control logs, the HRI2023Analysis.ipynb Jupyter notebook is used to process the data from the game logs and from the survey. The results are exported into a CSV file that can be used for data analysis where each row is a different participant.
+
+### Dataframe Variables
+The following are variables used in the CSV and data analysis that are originally based on the Qualtrics CSV variables.
+
+- **StartDate**: the exact date of the interaction start time in the format yyyy-mm-dd hh:mm:ss (24 hour system)
+- **EndDate**: the exact date of the interaction end time in the format yyyy-mm-dd hh:mm:ss (24 hour system)
+- **Status**: 
+- **IPAddress**: the IP Address of the device used for the Qualtrics survey (all 130.132.173.36 since the study used one device for all participants to standardize)
+- **Progress**: the participant's progress on the Qualtrics survey (scale of 0-100)
+- **Duration (in seconds)**: the amount of time in seconds that the participant took to complete the Qualtrics survey
+- **Finished**: represents if the participant completed the entire Qualtrics survey
+    - O: Qualtrics survey is not finished or incomplete
+    - 1: Qualtrics survey is finished or complete
+- **RecordedDate**: the exact date of the interaction recorded time in the format yyyy-mm-dd hh:mm:ss (24 hour system)
+- **ResponseId**: 
