@@ -6,12 +6,12 @@
 After a game is completed, the JS client sends data to the Python server (via a Websocket) to log game informaiton in an [SQLite](https://www.sqlite.org/index.html) database. Once the green text at the botom of the "game ended" screen changes from "Loading..." to a valid completion code, the data has been successfully saved to the database.
 
 The game_logs.db consists of 6 tables:
-1. [Games](###games)
-2. [Frames](###frames)
-3. [Actions](###actions)
-4. [Bullets](###bullets)
-5. [Enemies](###enemies)
-6. [Events](###events)
+1. [Games](#1-games)
+2. [Frames](#2-frames)
+3. [Actions](#3-actions)
+4. [Bullets](#4-bullets)
+5. [Enemies](#5-enemies)
+6. [Events](#6-events)
 
 
 ### 1. Games
