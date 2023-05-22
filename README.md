@@ -6,7 +6,7 @@
 After a game is completed, the JS client sends data to the Python server (via a Websocket) to log game informaiton in an [SQLite](https://www.sqlite.org/index.html) database. Once the green text at the botom of the "game ended" screen changes from "Loading..." to a valid completion code, the data has been successfully saved to the database.
 
 The game_logs.db consists of 6 tables:
-1. [Games](#games)
+1. [Games](###games)
 2. [Frames](#frames)
 3. [Actions](#actions)
 4. [Bullets](#bullets)
@@ -46,7 +46,7 @@ The Frames tables has 11 columns:
     - 1: sent
 
 
-### 3. [Actions](#actions)
+### 3. Actions
 Each row of the Actions table represents the player and AI actions from one frame of a game. A frame is one pass through the `update()` function for the game.
 
 The Actions tables has 17 columns:
@@ -87,7 +87,7 @@ The Actions tables has 17 columns:
 - **ai_rec_shoot**: (integer type)
 
 
-### 4. [Bullets](#bullets)
+### 4. Bullets
 Each row in the Bullets table represents the positioning and of a bullet at a specific frame of one game. A frame is one pass through the `update()` function for the game.
 
 The Bullets table has 5 columns:
@@ -98,7 +98,7 @@ The Bullets table has 5 columns:
 - **y**: y position of the bullet at the current frame (integer type)
 
 
-### 5. [Enemies](#enemies)
+### 5. Enemies
 Each row in the Enemies table represents the positioning and of an enemy at a specific frame of one game. A frame is one pass through the `update()` function for the game.
 
 The Enemies table has 5 columns:
@@ -109,7 +109,7 @@ The Enemies table has 5 columns:
 - **y**: y position of the enemy at the current frame (integer type)
 
 
-### 6. [Events](#events)
+### 6. Events
 Each row in the Events table represents a frame where the player or the AI kills an enemy. A frame is one pass through the `update()` function for the game.
 
 The Events table has 4 columns:
