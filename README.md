@@ -124,7 +124,7 @@ The Events table has 4 columns:
 
 
 ## Information About HRI2023Analysis.ipynb (Analysis Dataframes)
-*Last updated: 5/22/2023
+*Last updated: 5/23/2023
 
 Based on the Qualtrics survey and some of the game and control logs, the HRI2023Analysis.ipynb Jupyter notebook is used to process the data from the game logs and from the survey. The results are exported into a CSV file that can be used for data analysis where each row is a different participant.
 
@@ -142,3 +142,37 @@ The following are variables used in the CSV and data analysis that are originall
     - 1: Qualtrics survey is finished or complete
 - **RecordedDate**: the exact date of the interaction recorded time in the format yyyy-mm-dd hh:mm:ss (24 hour system)
 - **ResponseId**: 
+- **LocationLatitude**: the latitudinal coordinate of the participant while taking the Qualtrics survey (held constant at 41.3186)
+- **LocationLongitude**: the longitudinal coordinate of the participant while taking the Qualtrics survey (held constant at -72.9302)
+- **DistributionChannel**: represents how the Qualtrics survey was taken (preview, anonymously, etc.)
+- **UserLanguage**: the language that the Qualtrics survey was taken in (all in English)
+- **INFO_Browser**: which browser the Qualtrics survey was taken in (all in Safari except for the preview run in Chrome)
+- **INFO_Version**: the version of the browser that the survey was taken in (all 15.4 except for the preview)
+- **INFO_Operating System**: the OS that the survey was taken in (all in Macintosh except for the preview)
+- **INFO_Resolution**: the screen resolution that the survey was taken in (all 768 x 1024 except for the preview)
+
+
+The following are variables that record the participant information provided through the questions of the Qualtrics survey.
+
+- **AGREE**: answer to the question "By clicking “Agree to participate in the study” below you are indicating that you:
+read and understand this consent form and the information presented; agree to participate in this study; and agree to have your face and audio recorded and shared."
+    - 0: participant selects disagree
+    - 1: participant selects agree
+- **FUTURE**: answer to the question "(Optional) Agreement to Join Mailing List for Future Study Recruitment:By entering my email below, I allow members of Yale Robotics groups to contact me via my email address to ask for my participation in future studies conducted by Yale Robotics groups."
+- **AGE**: answer to the question "What is your age?"
+- **GENDER**: answer to the question "How do you describe your gender?"
+- **COUNTRY**: represents 
+- **ENGLISH**: answer to the question "How would you describe your English level?"
+- **OLANG**: answer to the question "What languages, other than English, do you speak?"
+- **STUD**: answer to the question "Are you a student?"
+- **MAJOR**: answer to the question "What is your major?"
+- **OCC**: answer to the question "What is your occupation?"
+- 
+
+
+The following are variables that were tracked with the Qualtrics survey but deleted for anonymity during data analysis.
+
+- **RecipientLastName**: the participant's last name
+- **RecipientFirstName**: the participant's first name
+- **RecipientEmail**: the participant's email address
+- **ExternalReference**: 
