@@ -167,6 +167,10 @@ read and understand this consent form and the information presented; agree to pa
 - **STUD**: answer to the question "Are you a student?"
 - **MAJOR**: answer to the question "What is your major?"
 - **OCC**: answer to the question "What is your occupation?"
+- **OFTEN_1_C, OFTEN_2_V, OFTEN_2_R, OFTEN_2_DO**: asks participant how often they interact with different technologies
+- **SI**: answer to the question "Have you ever played the video game Space Invaders before?"
+- **VASSESS_1 to VASSESS_5**: answers to questions regarding participant vision
+- **COMP_1 to COMP_9**: answers to questions regarding participant competitiveness
 - 
 
 
