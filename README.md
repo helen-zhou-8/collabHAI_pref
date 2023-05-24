@@ -1,4 +1,6 @@
 # collabHAI_pref Documentation
+1. [game_logs.db](#Information About game_logs.db (Game Logs))
+2. [HRI2023Analysis.ipynb ](#Information About HRI2023Analysis.ipynb (Analysis Dataframes))
 
 ## Information About game_logs.db (Game Logs)
 *Last updated: 5/22/2023
