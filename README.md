@@ -176,7 +176,19 @@ read and understand this consent form and the information presented; agree to pa
 - **TIPI2_1 TO TIPI2_10**: answers to questions from the TIPI personality test
 - **BEQ2_1 to BEQ2_16**: answers to questions from the Berkeley Expressivity Questionnaire (BEQ) personality test
 - **Social1 to Social9**: 
-- 
+- **RU**: answers to questions about the participant's thoughts on the robot behavior in uncooperative (first two games)
+- **RE**: answers to questions about the participant's thoughts on the robot behavior in early feedback requests (middle two games)
+- **RL**: answers to questions about the participant's thoughts on the robot behavior in late feedback requests (last two games)
+- **FEEDBACK**: answers to questions about the participant's thoughts on giving feedback
+- **ROBOT_CARES_TEAM_1**: rating for the statement "The robot cares about the team"
+- **REF_FREQ_TEAM**: rating for the statement "The robot referenced the team"
+- **REF_FREQ_SELF**: rating for the statement "The robot referenced itself"
+- **ROBOT_ORIENTATION**: rating for the question "On a scale from completely self-oriented to completely team-oriented, how would you describe the robot’s orientation?"
+- **BEH_PREF**: answers to questions regarding participant preferences for the different robot behaviors
+- **IMPROVEMENTS**: answer to the question "How could the researchers improve the game and/or robot behavior to make your interaction with the robot better?"
+- **ELSE**: answer to the question "Anything else you'd like to share?"
+- **speedMBps**: speed in MBps of the Qualtrics survey interaction
+- **ID**: the ID number assigned to that specific participant (non-identifying and anonymous)
 
 
 The following are variables that were tracked with the Qualtrics survey but deleted for anonymity during data analysis.
@@ -185,3 +197,7 @@ The following are variables that were tracked with the Qualtrics survey but dele
 - **RecipientFirstName**: the participant's first name
 - **RecipientEmail**: the participant's email address
 - **ExternalReference**: 
+- **PROLIFIC_PID**: 
+- **STUDY_ID**:
+- **SESSION_ID**: 
+- **Video**:
