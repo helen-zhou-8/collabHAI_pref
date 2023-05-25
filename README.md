@@ -173,6 +173,9 @@ read and understand this consent form and the information presented; agree to pa
 - **SI**: answer to the question "Have you ever played the video game Space Invaders before?"
 - **VASSESS_1 to VASSESS_5**: answers to questions regarding participant vision
 - **COMP_1 to COMP_9**: answers to questions regarding participant competitiveness
+- **TIPI2_1 TO TIPI2_10**: answers to questions from the TIPI personality test
+- **BEQ2_1 to BEQ2_16**: answers to questions from the Berkeley Expressivity Questionnaire (BEQ) personality test
+- **Social1 to Social9**: 
 - 
 
 
